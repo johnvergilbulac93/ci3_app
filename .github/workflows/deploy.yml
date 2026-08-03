@@ -48,3 +48,18 @@ jobs:
           tags: |
             ${{ env.WEB_IMAGE }}:latest
             ${{ env.WEB_IMAGE }}:${{ github.sha }}
+  deploy:
+    needs: build
+    runs-on: self-hosted
+
+    steps:
+      - name: Deploy application
+        shell: powershell
+        run: |
+          cd D:\DockerApps\CI3
+
+          docker compose pull
+
+          docker compose up -d --remove-orphans
+
+          docker image prune -f

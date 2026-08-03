@@ -1,8 +1,7 @@
 .git
 .gitignore
 .editorconfig
-docker
-!docker/default.conf
+!nginx/default.conf
 docker-compose.yml
 Dockerfile
 Dockerfile.php54

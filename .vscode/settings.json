@@ -1,10 +1,20 @@
 {
 	"cSpell.words": [
+		"autorestart",
+		"Buildx",
+		"DOCKERHUB",
 		"fastcgi",
 		"healthcheck",
 		"johnvergilbulac",
+		"keepalive",
 		"libjpeg",
 		"libzip",
-		"mbstring"
+		"mbstring",
+		"nodaemon",
+		"scgi",
+		"sendfile",
+		"supervisord",
+		"uwsgi",
+		"webdevops"
 	]
 }
