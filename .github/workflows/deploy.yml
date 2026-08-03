@@ -56,7 +56,7 @@ jobs:
       - name: Deploy application
         shell: powershell
         run: |
-          cd D:\DockerApps\CI3
+          cd D:\Development\DockerApps\CI3
 
           docker compose pull
 
